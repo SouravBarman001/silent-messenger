@@ -1,0 +1,17 @@
+
+
+1.Setup firebase
+    a. upgrading gradle version version (Compatibility Matrix)-> https://docs.gradle.org/current/userguide/compatibility.html
+    b. Signing Report -> gradlew signingReport
+    c. After that -> Add google-services.json file in app folder
+
+2.Dependencies
+    a. assets folder -> images, animations and tflite model
+
+3. UI components
+    a. Splash Screen
+    b. Login
+    c. Nav-Home
+         |--> Home - > Chatting home -> chatting screen + profile icon + search icon
+         |--> Contacts -> Contacts screen -> Contact details screen
+         |--> Sign language -> Sign language screen -> Sign language detect
