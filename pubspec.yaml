@@ -102,18 +102,18 @@ dependencies:
 
 
 
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  #   flutter_launcher_icons: "^0.10.0"
+  flutter_launcher_icons: ^0.11.0
 
-  # flutter_icons:
-  #   android: "ic_launcher"
-  #   ios: true
-  #   image_path: "assets/images/icon.png"
-  #   min_sdk_android: 21
-  #   remove_alpha_ios: true
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/app-icon.jpg"
+  min_sdk_android: 21 # android min sdk min:16, default 21
 
   # For recommended coding practices
   flutter_lints: ^4.0.0
@@ -137,5 +137,5 @@ flutter:
     - assets/KIIT/tflite/labels.txt
     - assets/frontend/model.tflite
     - assets/frontend/labels.txt
-#    - assets/samiul/model.tflite
-#    - assets/samiul/label.text
+    - assets/samiul/second_mobnet_model.tflite
+    - assets/samiul/label.txt

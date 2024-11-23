@@ -25,8 +25,8 @@ class _IndDetectionScreenState extends State<IndDetectionScreen> {
 
   loadModel() async {
     await Tflite.loadModel(
-      model: "assets/samiul/model.tflite",
-      labels: "assets/samiul/label.txt",
+      model: "assets/samiul/second_mobnet_model.tflite",
+      labels: "assets/samiul/labels.txt",
     );
   }
 
@@ -57,7 +57,7 @@ class _IndDetectionScreenState extends State<IndDetectionScreen> {
         imageStd: 127.5,
         rotation: 90,
         numResults: 3,
-        threshold: 0.5,
+        threshold: 0.01,
         asynch: true,
       );
 

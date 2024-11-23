@@ -16,8 +16,8 @@ class TFLiteHelper {
     AppHelper.log("loadModel", "Loading model..");
     try {
       String? res = await Tflite.loadModel(
-        model: "assets/KIIT/tflite/model_unquant.tflite",
-        labels: "assets/KIIT/tflite/labels.txt",
+        model: "assets/samiul/second_mobnet_model.tflite",
+        labels: "assets/samiul/labels.txt",
       );
       if (res == "success") {
         modelLoaded = true;

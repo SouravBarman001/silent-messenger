@@ -27,12 +27,14 @@ class _HomeScreenState extends State<HomeScreen> {
   final List<ChatUser> _searchList = [];
   // for storing search status
   bool _isSearching = false;
+  String? imageUrl = null;
 
   @override
   void initState() {
     super.initState();
     APIs.getSelfInfo();
-
+    imageUrl = APIs.me.image.toString();
+    print("image url : $imageUrl");
     //for updating user active status according to lifecycle events
     //resume -- active or online
     //pause  -- inactive or offline
@@ -96,7 +98,12 @@ class _HomeScreenState extends State<HomeScreen> {
                     MaterialPageRoute(
                         builder: (_) => ProfileScreen(user: APIs.me)));
               },
-              icon: const ProfileImage(size: 32),
+              icon:CircleAvatar(
+                radius: 20,
+                backgroundImage: NetworkImage(imageUrl.toString() ?? ''),
+              ),
+              //ProfileImage(size: 32,),
+
             ),
 
             //title

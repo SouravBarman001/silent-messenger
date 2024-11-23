@@ -179,7 +179,7 @@ class _ChatScreenState extends State<ChatScreen> {
                     //user profile picture
                     ProfileImage(
                       size: mq.height * .05,
-                      url: list.isNotEmpty ? list[0].image : widget.user.image,
+                      url: list.isNotEmpty ? list[0].image.toString() : widget.user.image,
                     ),
 
                     //for adding some space
