@@ -56,9 +56,9 @@ class _SplashScreenState extends State<SplashScreen> {
             right: mq.width * .25,
             width: mq.width * .5,
             child: Image.asset(
-              ImageAssets.splashImage,
-              height: 80,
-              width: 80,
+              ImageAssets.splashImage1,
+              height: 100,
+              width: 100,
             )),
 
       ]),

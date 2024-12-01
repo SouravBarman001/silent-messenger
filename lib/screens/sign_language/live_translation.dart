@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 
 import 'package:we_chat/screens/sign_language/sign_camera_detection.dart';
+import 'package:we_chat/screens/sign_language/sign_language_with_flask/sign_language_flask.dart';
 import 'package:we_chat/screens/sign_language/simple_detection.dart';
 import 'package:we_chat/screens/sign_language/test/ind_asl_detection.dart';
 import 'package:we_chat/screens/sign_language/viewfinder.dart';
@@ -1220,7 +1221,7 @@ class _SignLanguageCameraState extends State<SignLanguageCamera> {
                                   context,
                                //SlideRightRoute(page: const   IndDetectionScreen()),
 
-                               SlideRightRoute(page: const DetectScreen(title: 'detection',)),
+                               SlideRightRoute(page: SignLanguageDetection()),
                                 );
                               },
                               // color: mainColor,

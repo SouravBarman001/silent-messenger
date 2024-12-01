@@ -8,6 +8,7 @@ import 'package:flutter_notification_channel/flutter_notification_channel.dart';
 import 'package:flutter_notification_channel/notification_importance.dart';
 
 import 'package:we_chat/screens/sign_language/constraints.dart';
+import 'package:we_chat/screens/sign_language/live_translation.dart';
 
 import 'firebase_options.dart';
 import 'screens/splash_screen.dart';
@@ -52,7 +53,7 @@ class MyApp extends StatelessWidget {
                   fontSize: 19),
               backgroundColor: Colors.white,
             )),
-        home: const SplashScreen());
+        home:  const SplashScreen());
   }
 }
 
