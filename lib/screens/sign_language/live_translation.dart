@@ -1218,9 +1218,9 @@ class _SignLanguageCameraState extends State<SignLanguageCamera> {
                               onPressed: () {
                                 Navigator.push(
                                   context,
-                                  //  SlideRightRoute(page: const   IndDetectionScreen()),
+                               //SlideRightRoute(page: const   IndDetectionScreen()),
 
-                                 SlideRightRoute(page: const DetectScreen(title: 'detection',)),
+                               SlideRightRoute(page: const DetectScreen(title: 'detection',)),
                                 );
                               },
                               // color: mainColor,

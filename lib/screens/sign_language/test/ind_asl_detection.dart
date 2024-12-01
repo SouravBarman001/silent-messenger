@@ -25,8 +25,8 @@ class _IndDetectionScreenState extends State<IndDetectionScreen> {
 
   loadModel() async {
     await Tflite.loadModel(
-      model: "assets/samiul/second_mobnet_model.tflite",
-      labels: "assets/samiul/labels.txt",
+      model: "assets/KIIT/tflite/second_mobnet_model.tflite",
+      labels: "assets/KIIT/tflite/labels.txt",
     );
   }
 
