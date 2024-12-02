@@ -250,7 +250,7 @@ class _SignLanguageDetectionState extends State<SignLanguageDetection> {
   Timer? _captureTimer;
   bool _isProcessingFrame = false;
 
-  final String _apiUrl = 'http://192.168.0.106:5001/predict';
+  final String _apiUrl = 'http://192.168.1.6:5001/classify';
 
   @override
   void initState() {
